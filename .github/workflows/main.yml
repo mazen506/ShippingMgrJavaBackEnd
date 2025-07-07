@@ -32,8 +32,8 @@ jobs:
             sudo systemctl stop springbootapp || true
 
             # Copy new JAR to deployment folder
-            cp /root/shipping-mgr.jar /root/shipping-mgr.jar.bak
-            mv /tmp/shipping-mgr.jar /root/shipping-mgr.jar
+            cp /root/shipping_mgr-1.0.0.jar /root/shipping_mgr-1.0.0.jar.bak
+            mv /tmp/shipping_mgr-1.0.0.jar /root/shipping_mgr-1.0.0.jar
 
             # Start app
             sudo systemctl start springbootapp
