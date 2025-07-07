@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/shipping_mgr
+    username: root
+    password: Admin@1234
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      naming-strategy: org.hibernate.cfg.DefaultComponentSafeNamingStrategy
+      ddl-auto: none
+  liquibase:
+      change-log: classpath:db/change-log/change-log.xml

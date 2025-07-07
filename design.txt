@@ -1,0 +1,6 @@
+Temp:
+* add user entity and migrate it
+* implement fluent configurations
+* implement simple roles authorization
+* implement jwt and refresh tokens
+* Implement advanced role authorization

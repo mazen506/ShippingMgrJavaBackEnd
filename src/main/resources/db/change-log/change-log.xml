@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
+
+    <include file="db/change-log/2025/05/29-01-changelog.sql"/>
+    <include file="db/change-log/2025/05/29-02-changelog.sql"/>
+    <include file="db/change-log/2025/05/29-03-changelog.sql"/>
+    <include file="db/change-log/2025/05/add_created_updated_fields.sql"/>
+    <include file="db/change-log/2025/05/rename_refreshToken.sql"/>
+</databaseChangeLog>
