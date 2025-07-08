@@ -3,6 +3,8 @@ spring:
     name: shipping-mgr
   liquibase:
         enabled: false
+  flyway:
+        enabled: false
   jwt:
     secret: ${JWT_SECRET}
     accessTokenExpiration: 900 # 15m
