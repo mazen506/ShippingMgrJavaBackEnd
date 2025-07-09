@@ -32,7 +32,7 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: ${{ secrets.SERVER_PORT }}
           source: "target/shipping_mgr-1.0.0.jar"
-          target: "/tmp/shipping_mgr-1.0.0.jar"
+          target: "/tmp/"
           strip_components: 1
           script: rm -rf /tmp/shipping_mgr-1.0.0.jar
 
