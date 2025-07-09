@@ -32,9 +32,8 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: ${{ secrets.SERVER_PORT }}
           source: "target/shipping_mgr-1.0.0.jar"
-          target: "/tmp/"
+          target: "/tmp/shipping_mgr"
           strip_components: 1
-          script: rm -rf /tmp/shipping_mgr-1.0.0.jar
 
       - name: Deploy to VPS via SSH
         uses: appleboy/ssh-action@v0.1.1
@@ -49,6 +48,6 @@ jobs:
             # Backup current JAR
             cp /root/shipping_mgr-1.0.0.jar /root/shipping_mgr-1.0.0.jar.bak
             # Move new JAR into place
-            mv /tmp/shipping_mgr-1.0.0.jar /root/shipping_mgr-1.0.0.jar
+            mv /tmp/shipping_mgr/shipping_mgr-1.0.0.jar /root/shipping_mgr-1.0.0.jar
             # Start app
             sudo systemctl start shipping-mgr-app
