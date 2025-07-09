@@ -1,6 +1,14 @@
 spring:
   datasource:
     url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATABASE_USER}
+    password: ${SPRING_DATABASE_PASSWORD}
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+      show-sql: true
+      hibernate:
+        naming-strategy: org.hibernate.cfg.DefaultComponentSafeNamingStrategy
+        ddl-auto: none
   server:
       port: 80
 websiteUrl: https://mystore.com
