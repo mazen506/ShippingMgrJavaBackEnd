@@ -7,8 +7,9 @@ spring:
   jpa:
       show-sql: true
       hibernate:
-        naming-strategy: org.hibernate.cfg.DefaultComponentSafeNamingStrategy
-        ddl-auto: none
+       dialect: MySQL8Dialect
+       naming-strategy: org.hibernate.cfg.DefaultComponentSafeNamingStrategy
+       ddl-auto: none
   server:
       port: 80
 websiteUrl: https://mystore.com
