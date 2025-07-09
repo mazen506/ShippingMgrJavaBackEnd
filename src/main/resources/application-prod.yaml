@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: ${SPRING_DATASOURCE_URL}
-    username: ${SPRING_DATABASE_USER}
-    password: ${SPRING_DATABASE_PASSWORD}
+    url: jdbc:mariadb://localhost:3306/admin_shipping_mgr
+    username: admin_shipping_mgr
+    password: Admin@1234
     driver-class-name: org.mariadb.jdbc.Driver
   jpa:
       show-sql: true
