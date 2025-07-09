@@ -37,6 +37,7 @@ jobs:
 
             # Copy new JAR to deployment folder
             cp /root/shipping_mgr-1.0.0.jar /root/shipping_mgr-1.0.0.jar.bak
+            ls -l /tmp/
             mv /tmp/shipping_mgr-1.0.0.jar /root/shipping_mgr-1.0.0.jar
 
             # Start app
