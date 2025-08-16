@@ -29,6 +29,7 @@ public class JwtService {
 
     private Jwt generateToken(User user, long tokenExpiration)
     {
+        // comment
         var claims = Jwts.claims()
                 .subject(user.getId().toString())
                 .add("email", user.getEmail())
